@@ -1,0 +1,54 @@
+# .gitignore recomendado para proyectos Python
+
+# Entorno virtual
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Cachés y archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+*.egg
+*.whl
+
+# IDEs / editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs y bases de datos
+*.log
+*.sqlite3
+*.db
+
+# pyenv
+.python-version
+
+# Extensiones compiladas
+*.so
+
+# Ignorar modelos y pesos grandes (si los guardas en el repo)
+models/
+weights/
+*.pt
+*.pth
+*.bin
+
+# Opcional: carpetas de datos / imágenes generadas
+# data/
+# fotos/
