@@ -34,6 +34,21 @@ cv2.rectangle(foto_prueba,
             (0, 255, 0),
             2)
 
+# realizar comparacion
+resultado = fr.compare_faces([cara_codificada_A], cara_codificada_B)
+
+# medida de la distancia
+distancia = fr.face_distance([cara_codificada_A], cara_codificada_B)
+
+# mostrar resultados
+cv2.putText(foto_prueba,
+            f'{resultado} {distancia.round(2)}',
+            (50, 50),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            1,
+            (0, 255, 0),
+            2)
+
 # mostrar imagenes
 cv2.imshow('foto control', foto_control)
 cv2.imshow('foto_prueba', foto_prueba)
